@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #1f2937;
+}
+
+.hero,
+.footer {
+  background-color: #1f2937;
+}
+
+.hero {
+  color: #f9faf8;
+}
+
+header,
+.mainhero,
+blockquote,
+.info,
+.signup {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.mainhero {
+  padding: 50px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h1,
+h2 {
+  font-weight: 800;
+}
+
+header ul li a,
+.mainhero p,
+.footer {
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+header ul {
+  display: flex;
+}
+
+button {
+  background-color: #3882f6;
+  color: #f9faf8;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.mainhero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left,
+.right {
+  flex: 1 1 50%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  width: 500px;
+}
+
+li:not(:last-of-type) {
+  padding-right: 22px;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  padding: 32px;
+}
+
+.info {
+  padding: 32px 0 64px 0;
+}
+
+.cards {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+
+.card {
+  width: 250px;
+  text-align: center;
+}
+
+main img {
+  border: 1px solid #3882f6;
+  border-radius: 25px;
+  display: block;
+  height: 250px;
+  width: 250px;
+}
+
+figcaption {
+  padding: 16px;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  background-color: #e5e7eb;
+}
+
+blockquote {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  padding: 64px;
+}
+
+blockquote footer {
+  font-style: normal;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 16px 32px 0 0;
+  text-align: right;
+}
+
+.space {
+  padding: 64px;
+}
+
+.signup {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3882f6;
+  color: #f9faf8;
+  padding: 32px;
+  border-radius: 5px;
+}
+
+.signup button {
+  border: 1px solid white;
+}
+
+.signup p {
+  color: #e5e7eb;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+}
