@@ -6,6 +6,8 @@
 
 body {
   color: #1f2937;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero,
@@ -24,6 +26,16 @@ blockquote,
 .signup {
   width: 75%;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  header,
+  .mainhero,
+  blockquote,
+  .info,
+  .signup {
+    width: 90%;
+  }
 }
 
 .mainhero {
@@ -62,6 +74,8 @@ a {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   padding-top: 16px;
 }
 
@@ -80,6 +94,13 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .mainhero {
+    flex-wrap: wrap;
+  }
 }
 
 .left,
@@ -101,6 +122,12 @@ button {
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .right {
+    justify-content: center;
+  }
+}
+
 img {
   max-width: 100%;
   width: 500px;
@@ -108,6 +135,22 @@ img {
 
 li:not(:last-of-type) {
   padding-right: 22px;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    padding-right: 22px;
+  }
+}
+
+@media screen and (max-width: 603px) {
+  .logo {
+    padding-bottom: 8px;
+  }
+}
+
+main {
+  flex: 1;
 }
 
 h2 {
@@ -124,6 +167,7 @@ h2 {
   display: flex;
   gap: 32px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -164,6 +208,12 @@ blockquote footer {
   text-align: right;
 }
 
+@media screen and (min-width: 1612px) {
+  blockquote {
+    font-size: 64px;
+  }
+}
+
 .space {
   padding: 64px;
 }
@@ -171,10 +221,12 @@ blockquote footer {
 .signup {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   background-color: #3882f6;
   color: #f9faf8;
   padding: 32px;
   border-radius: 5px;
+  gap: 8px;
 }
 
 .signup button {
@@ -190,4 +242,8 @@ blockquote footer {
   justify-content: center;
   align-items: center;
   padding: 32px;
+}
+
+span {
+  background-color: lightpink;
 }
