@@ -1,5 +1,14 @@
-* {
+html {
   box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
   margin: 0;
   padding: 0;
 }
@@ -43,6 +52,10 @@ blockquote,
   }
 }
 
+.mainhero {
+  padding: 50px 0;
+}
+
 @media screen and (max-width: 425px) {
   header,
   .mainhero,
@@ -51,10 +64,9 @@ blockquote,
   .signup {
     width: 100%;
   }
-}
-
-.mainhero {
-  padding: 50px 0;
+  .mainhero {
+    padding: 32px 0;
+  }
 }
 
 .logo {
@@ -178,11 +190,27 @@ h2 {
   padding: 32px 0 64px 0;
 }
 
+@media screen and (max-width: 425px) {
+  .info {
+    padding: 0 0 32px 0;
+  }
+
+  h2 {
+    padding-bottom: 16px;
+  }
+}
+
 .cards {
   display: flex;
   gap: 32px;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 425px) {
+  .cards {
+    gap: 16px;
+  }
 }
 
 .card {
@@ -252,6 +280,16 @@ blockquote footer {
   color: #e5e7eb;
 }
 
+@media screen and (max-width: 425px) {
+  .space {
+    padding: 0;
+  }
+
+  .signup {
+    border-radius: 0;
+  }
+}
+
 .footer {
   display: flex;
   justify-content: center;
@@ -259,6 +297,8 @@ blockquote footer {
   padding: 32px;
 }
 
-span {
-  background-color: lightpink;
+@media screen and (max-width: 425px) {
+  .footer {
+    padding: 16px;
+  }
 }
